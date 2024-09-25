@@ -27,7 +27,7 @@ which components do I need?
 --- 1. npx expo install @react-native-async-storage/async-storage -Länk  "https://docs.expo.dev/versions/latest/sdk/async-storage/"
 --- 2. npx expo install @react-native-community/datetimepicker -Länk "https://docs.expo.dev/versions/latest/sdk/date-time-picker/"
 --- 3. npx expo install expo-location -Länk "https://docs.expo.dev/versions/latest/sdk/location/"
---- 4. -Länk ""
+--- 4. npx expo install expo-status-bar -Länk "https://docs.expo.dev/versions/latest/sdk/status-bar/"
 
 Inlämning 1 - React Native
 

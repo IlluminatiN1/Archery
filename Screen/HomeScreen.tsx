@@ -33,8 +33,9 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "green",
     padding: 10,
-    borderRadius: 6,
-    color: "white"
+    color: "white",
+    width: "100%",
+  marginVertical: 8,
   },
   buttonText: {
     color: "white",

@@ -15,7 +15,7 @@ export default function TabNavigator() {
                 <Feather
                 name="settings"
                 size={24}
-                color="black"
+                color="white"
                 onPress={() => navigation.navigate("Settings")}
                 />
             ),
@@ -24,6 +24,10 @@ export default function TabNavigator() {
             },
             tabBarActiveTintColor: "white",
             tabBarInactiveTintColor: "gray",
+            headerStyle: {
+                backgroundColor: "black",
+            },
+            headerTintColor: "white",
         })}
         >
         <Tab.Screen name="Home" component={HomeScreen} options= {{tabBarIcon: (props) => (

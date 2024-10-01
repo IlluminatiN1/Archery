@@ -6,7 +6,6 @@ export interface Round {
 export interface Training {
     id: string;
     date: string;
-    location: string;
     firstPeriod: Round[];
     firstPeriodTotalScore: number;
     secondPeriod: Round[];

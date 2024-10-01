@@ -14,12 +14,12 @@ BottomTabScreenProps<TabParamList>
 export default function HomeScreen (props: Props) {
   return (
     <View style={ styles.container }>
-      <Text>Home Screen</Text>
+      <Text>Choose: </Text>
       <Pressable style={styles.button} onPress={() => props.navigation.navigate("Compound")}>
-        <Text style={styles.buttonText}>Compound</Text>
+        <Text style={styles.buttonText}>Competition</Text>
       </Pressable>
       <Pressable style={styles.button} onPress={() => props.navigation.navigate("Recurve")}>
-        <Text style={styles.buttonText}>Recurve</Text>
+        <Text style={styles.buttonText}>Training</Text>
       </Pressable>
     </View>
   )

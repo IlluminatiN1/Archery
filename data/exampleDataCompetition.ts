@@ -37,7 +37,7 @@ export const exampleCompetition1: Competition = {
 export const exampleCompetition2: Competition = {
     id: "2",
     name: "Example Competition 2",
-    location: "Malmö, Sweden",
+    location: "Oslo, Norway",
     date: "2024-07-10",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
@@ -105,8 +105,8 @@ export const exampleCompetition3: Competition = {
 export const exampleCompetition4: Competition = {
     id: "4",
     name: "Example Competition 4",
-    location: ", Sweden",
-    date: "2024-10-01",
+    location: "Berlin, Germany",
+    date: "2024-03-04",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -138,6 +138,8 @@ export const exampleCompetition4: Competition = {
 
 export const exampleCompetition5: Competition = {
     id: "5",
+    name: "Example Competition 5",
+    location: "Las Vegas, United States",
     date: "2024-10-01",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },

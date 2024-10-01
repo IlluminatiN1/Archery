@@ -2,8 +2,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigator, { TabParamList } from './TabNavigator';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import React from "react";
-import CompoundScreen from "../Screen/CompoundScreen";
-import RecurveScreen from "../Screen/RecurveScreen";
+import CompoundScreen from "../Screen/CompetitionScreen";
+import RecurveScreen from "../Screen/TrainingScreen";
 import SettingsScreen from "../Screen/SettingsScreen";
 
 export type RootStackParamList = {

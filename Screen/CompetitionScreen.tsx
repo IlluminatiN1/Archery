@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 export default function CompoundScreen() {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Compound</Text>
+        <Text>Competition</Text>
       </View>
     )
 }

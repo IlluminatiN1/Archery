@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator<TabParamList>();
 export default function TabNavigator() {
     return (
         <Tab.Navigator screenOptions={({navigation}) =>({
-            headerRight: (props) => (
+            headerRight: () => (
                 <Feather
                 name="settings"
                 size={24}

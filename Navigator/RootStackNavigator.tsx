@@ -2,13 +2,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigator, { TabParamList } from './TabNavigator';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import React from "react";
-import CompoundScreen from "../Screen/CompetitionScreen";
-import RecurveScreen from "../Screen/TrainingScreen";
+import CompetitionScreen from "../Screen/CompetitionScreen";
+import TrainingScreen from "../Screen/TrainingScreen";
 import SettingsScreen from "../Screen/SettingsScreen";
 
 export type RootStackParamList = {
     HomeNavigator: NavigatorScreenParams<TabParamList>;
     Stats: undefined;
+    Home: undefined;
     Competition: undefined;
     Training: undefined;
     Settings: undefined;
@@ -26,12 +27,12 @@ export default function RootStackNavigator() {
             />
             <RootStack.Screen
             name="Competition"
-            component={CompoundScreen}
+            component={CompetitionScreen}
             options={{title: "Competition Screen"}}
             />
             <RootStack.Screen
             name="Training"
-            component={RecurveScreen}
+            component={TrainingScreen}
             options={{title: "Training Screen"}}/>
             <RootStack.Screen
             name="Settings"

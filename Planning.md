@@ -1,42 +1,18 @@
+ --- Getting started --- 
+
 1. npx create-expo-app@latest --template
-2. typescript blank
-3. Getting started/ React Navigation "https://reactnavigation.org/docs/getting-started"
-- npm install @react-navigation/native
-- npx expo install react-native-screens react-native-safe-area-context
-
-
-3. Native Stack Navigator "https://reactnavigation.org/docs/native-stack-navigator"
-      |
-      v
-- npm install @react-navigation/native-stack
-
-4. Bottom Tabs Navigator "https://reactnavigation.org/docs/bottom-tab-navigator"
-- npm install @react-navigation/bottom-tabs
-
-5. React native core components   "https://reactnative.dev/docs/intro-react-native-components"
-1. App 
--- npx create-expo-app@latest --template
-2.
--- npm install @react-navigation/native
+2. npm install @react-navigation/native
 3. npx expo install react-native-screens react-native-safe-area-context
 4. npm install @react-navigation/native-stack
-5. - npm install @react-navigation/bottom-tabs
---- React Navigation Components ---
-1. <NavigationContainer>
-2. <NativeStackNavigator>
-3. <Stack.Screen>
-4. <BottomTabNavigator>
-5. <Tab.Screen>
+5. npm install @react-navigation/bottom-tabs
 
  --- React Native Components ---
-
 1. <View>
 2. <Text>
 3. <Image>
 4. <Pressable>
 5. <FlatList>
 6. <TouchableWithoutFeedback>
-7. 
 
 --- Expo SDK Components --- "https://docs.expo.dev/versions/latest/"
 
@@ -44,20 +20,16 @@
 -- npx expo install @react-native-async-storage/async-storage 
 -- Länk  "https://docs.expo.dev/versions/latest/sdk/async-storage/"
 
-2.
+2. StatusBar
 -- npx expo install expo-status-bar
 -- Länk https://docs.expo.dev/versions/latest/sdk/status-bar/
 3. 
 -- npx expo install @react-native-community/datetimepicker 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/date-time-picker/"
 
-4. 
+4. Location
 -- npx expo install expo-location 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/location/"
-
-5. 
--- npx expo install expo-status-bar 
--- Länk "https://docs.expo.dev/versions/latest/sdk/status-bar/"
 
 Inlämning 1 - React Native
 

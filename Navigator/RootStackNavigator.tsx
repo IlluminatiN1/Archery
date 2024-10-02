@@ -9,8 +9,8 @@ import SettingsScreen from "../Screen/SettingsScreen";
 export type RootStackParamList = {
     HomeNavigator: NavigatorScreenParams<TabParamList>;
     Stats: undefined;
-    Compound: undefined;
-    Recurve: undefined;
+    Competition: undefined;
+    Training: undefined;
     Settings: undefined;
 };
 export const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -25,14 +25,14 @@ export default function RootStackNavigator() {
             }}
             />
             <RootStack.Screen
-            name="Compound"
+            name="Competition"
             component={CompoundScreen}
-            options={{title: "Compound Screen"}}
+            options={{title: "Competition Screen"}}
             />
             <RootStack.Screen
-            name="Recurve"
+            name="Training"
             component={RecurveScreen}
-            options={{title: "Recurve Screen"}}/>
+            options={{title: "Training Screen"}}/>
             <RootStack.Screen
             name="Settings"
             component={SettingsScreen}/>

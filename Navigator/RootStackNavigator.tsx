@@ -28,15 +28,28 @@ export default function RootStackNavigator() {
             <RootStack.Screen
             name="Competition"
             component={CompetitionScreen}
-            options={{title: "Competition Screen"}}
+            options={{headerStyle: {
+                backgroundColor: "black",
+                },
+                headerTintColor: "white",
+            }}
             />
             <RootStack.Screen
             name="Training"
             component={TrainingScreen}
-            options={{title: "Training Screen"}}/>
+            options={{headerStyle: {
+                backgroundColor: "black",
+                },
+                headerTintColor: "white",
+            }}/>
             <RootStack.Screen
             name="Settings"
-            component={SettingsScreen}/>
+            component={SettingsScreen}
+            options={{headerStyle: {
+                backgroundColor: "black",
+                },
+                headerTintColor: "white"
+            }}/>
         </RootStack.Navigator>
         
     );

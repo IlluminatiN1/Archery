@@ -7,27 +7,27 @@
 5. npm install @react-navigation/bottom-tabs
 
  --- React Native Components ---
-1. <View>
-2. <Text>
-3. <Image>
-4. <Pressable>
-5. <FlatList>
-6. <TouchableWithoutFeedback>
+1.[x] <View> 
+2.[x] <Text>
+3.[x]<Image>
+4.[x]<Pressable>
+5.[]<FlatList>
+6.[]<TouchableWithoutFeedback>
 
 --- Expo SDK Components --- "https://docs.expo.dev/versions/latest/"
 
-1. AsyncStorage
+1.[x] AsyncStorage
 -- npx expo install @react-native-async-storage/async-storage 
 -- Länk  "https://docs.expo.dev/versions/latest/sdk/async-storage/"
 
-2. StatusBar
+2.[x] StatusBar
 -- npx expo install expo-status-bar
 -- Länk https://docs.expo.dev/versions/latest/sdk/status-bar/
-3. 
+3.[] DateTimePicker 
 -- npx expo install @react-native-community/datetimepicker 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/date-time-picker/"
 
-4. Location
+4.[] Location
 -- npx expo install expo-location 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/location/"
 

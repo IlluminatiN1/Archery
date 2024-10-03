@@ -11,7 +11,7 @@ export default function StatsScreen() {
 
   useEffect(() => {
     async function fetchData() {
-      await AsyncStorage.setItem("Competition", JSON.stringify(exampleCompetitions));
+      await AsyncStorage.setItem("Competition", JSON.stringify(exampleCompetitions)); 
       await AsyncStorage.setItem("Training", JSON.stringify(exampleTrainings));
 
       const storedCompetitions = await AsyncStorage.getItem("Competition");

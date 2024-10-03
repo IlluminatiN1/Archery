@@ -8,8 +8,6 @@ import SettingsScreen from "../Screen/SettingsScreen";
 
 export type RootStackParamList = {
     HomeNavigator: NavigatorScreenParams<TabParamList>;
-    Stats: undefined;
-    Home: undefined;
     Competition: undefined;
     Training: undefined;
     Settings: undefined;

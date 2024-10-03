@@ -5,11 +5,13 @@ import React from "react";
 import CompetitionScreen from "../Screen/CompetitionScreen";
 import TrainingScreen from "../Screen/TrainingScreen";
 import SettingsScreen from "../Screen/SettingsScreen";
-import { StatusBar } from "expo-status-bar";
+import StartCompetitionScreen from "../Screen/StartCompetitionScreen";
+
 
 export type RootStackParamList = {
     HomeNavigator: NavigatorScreenParams<TabParamList>;
     Competition: undefined;
+    StartCompetition: undefined
     Training: undefined;
     Settings: undefined;
 };
@@ -23,6 +25,15 @@ export default function RootStackNavigator() {
             component={TabNavigator}
             options={{
                 headerShown: false,
+            }}
+            />
+            <RootStack.Screen
+            name="StartCompetition"
+            component={StartCompetitionScreen}
+            options={{headerStyle: {
+                backgroundColor: "black",
+                },
+                headerTintColor: "white",
             }}
             />
             <RootStack.Screen

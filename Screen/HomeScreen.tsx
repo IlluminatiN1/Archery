@@ -7,19 +7,19 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from 'react';
 import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 
-type Props = CompositeScreenProps<NativeStackScreenProps<RootStackParamList, "Competition">,
+type Props = CompositeScreenProps<NativeStackScreenProps<RootStackParamList>,
 BottomTabScreenProps<TabParamList>
 >;
 
 export default function HomeScreen (props: Props) {
   return (
     <View style={ styles.container }>
-      <Pressable onPress={() => props.navigation.navigate("Competition")}>
+      <Pressable onPress={() => props.navigation.navigate("StartCompetition")}>
         <Image 
         source={require("../assets/Competition.png")} 
         style={styles.image}/>
       </Pressable>
-      <Pressable style={styles.button} onPress={() => props.navigation.navigate("Competition")}>
+      <Pressable style={styles.button} onPress={() => props.navigation.navigate("StartCompetition")}>
         <Text style={styles.buttonText}>Competition</Text>
       </Pressable>
       <Pressable onPress={() => props.navigation.navigate("Training")}>

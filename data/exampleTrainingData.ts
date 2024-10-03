@@ -2,7 +2,7 @@ import { Training } from "./dataModel";
 
 export const exampleTraining1: Training = {
     id: "1",
-    date: "2024-10-01",
+    date: "2024-01-20",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -34,7 +34,7 @@ export const exampleTraining1: Training = {
 
 export const exampleTraining2: Training = {
     id: "2",
-    date: "2024-10-01",
+    date: "2024-04-01",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -66,7 +66,7 @@ export const exampleTraining2: Training = {
 
 export const exampleTraining3: Training = {
     id: "3",
-    date: "2024-10-01",
+    date: "2024-05-11",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -98,7 +98,7 @@ export const exampleTraining3: Training = {
 
 export const exampleTraining4: Training = {
     id: "4",
-    date: "2024-10-01",
+    date: "2024-07-11",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -130,7 +130,7 @@ export const exampleTraining4: Training = {
 
 export const exampleTraining5: Training = {
     id: "5",
-    date: "2024-10-01",
+    date: "2024-11-01",
     firstPeriod: [
         { shots: [8, 10, 8], total: 26, roundNumber: 1 },
         { shots: [10, 10, 10], total: 30, roundNumber: 2 },
@@ -159,3 +159,4 @@ export const exampleTraining5: Training = {
     secondPeriodTotalScore: 285,
     totalScore: 567
 };
+export const exampleTrainings: Training [] = [exampleTraining1, exampleTraining2, exampleTraining3, exampleTraining4, exampleTraining5];

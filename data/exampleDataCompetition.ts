@@ -169,3 +169,4 @@ export const exampleCompetition5: Competition = {
     secondPeriodTotalScore: 285,
     totalScore: 567
 };
+export const exampleCompetitions: Competition [] = [exampleCompetition1, exampleCompetition2, exampleCompetition3, exampleCompetition4, exampleCompetition5];

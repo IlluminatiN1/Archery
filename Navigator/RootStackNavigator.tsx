@@ -30,7 +30,8 @@ export default function RootStackNavigator() {
             <RootStack.Screen
             name="StartCompetition"
             component={StartCompetitionScreen}
-            options={{headerStyle: {
+            options={{title: "Start",
+                headerStyle: {
                 backgroundColor: "black",
                 },
                 headerTintColor: "white",

@@ -10,7 +10,10 @@ import StartCompetitionScreen from "../Screen/StartCompetitionScreen";
 
 export type RootStackParamList = {
     HomeNavigator: NavigatorScreenParams<TabParamList>;
-    Competition: undefined;
+    Competition: {
+        competitionName: string; 
+        location: string; 
+        date: string;};
     StartCompetition: undefined
     Training: undefined;
     Settings: undefined;

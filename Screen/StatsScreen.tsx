@@ -11,27 +11,23 @@ export default function StatsScreen() {
 
   useEffect(() => {
     async function fetchData() {
-      await AsyncStorage.setItem("Competition", JSON.stringify(exampleCompetitions)); 
-      await AsyncStorage.setItem("Training", JSON.stringify(exampleTrainings));
-
-      const storedCompetitions = await AsyncStorage.getItem("Competition");
+      const storedCompetitions = await AsyncStorage.getItem("Competitions");
       if (storedCompetitions) {
         setCompetitions(JSON.parse(storedCompetitions));
-      } 
-      else {
-        setCompetitions([]); 
+      } else {
+        setCompetitions(exampleCompetitions);
       }
+
       const storedTrainings = await AsyncStorage.getItem("Training");
       if (storedTrainings) {
         setTrainings(JSON.parse(storedTrainings));
-      } 
-      else {
-        setTrainings([]);
+      } else {
+        setTrainings(exampleTrainings);
       }
     }
 
     fetchData();
-  }, []); 
+  }, []);
 
   return (
     <ScrollView>
@@ -41,30 +37,29 @@ export default function StatsScreen() {
           <Text>{competition.name}</Text>
           <Text>Location: {competition.location}</Text>
           <Text>Date: {competition.date}</Text>
-          <Text>TotalScore: {competition.totalScore}</Text>
+          <Text>Total Score: {competition.totalScore}</Text>
         </View>
       ))}
-        <Text style={styles.header}>Training</Text>
-        {trainings.map((training) => (
+      <Text style={styles.header}>Training</Text>
+      {trainings.map((training) => (
         <View key={training.id} style={styles.container}>
           <Text>Date: {training.date}</Text>
-          <Text>TotalScore: {training.totalScore}</Text>
+          <Text>Total Score: {training.totalScore}</Text>
         </View>
       ))}
     </ScrollView>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
-  padding: 10,
-  marginVertical: 8,
-  backgroundColor: "#f9f9f9",
-  borderRadius: 5,
+    padding: 10,
+    marginVertical: 8,
+    backgroundColor: "white",
+    borderRadius: 5,
   },
   header: {
-  fontSize: 20,
-  fontWeight: "bold",
-  padding: 10,
+    fontSize: 20,
+    fontWeight: "bold",
+    padding: 10,
   },
 });

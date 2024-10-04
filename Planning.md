@@ -11,8 +11,7 @@
 2.[x] <Text>
 3.[x]<Image>
 4.[x]<Pressable>
-5.[]<FlatList>
-6.[]<TouchableWithoutFeedback>
+
 
 --- Expo SDK Components --- "https://docs.expo.dev/versions/latest/"
 
@@ -23,11 +22,11 @@
 2.[x] StatusBar
 -- npx expo install expo-status-bar
 -- Länk https://docs.expo.dev/versions/latest/sdk/status-bar/
-3.[] DateTimePicker 
+3.[x] DateTimePicker 
 -- npx expo install @react-native-community/datetimepicker 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/date-time-picker/"
 
-4.[] Location
+4.[x] Location
 -- npx expo install expo-location 
 -- Länk "https://docs.expo.dev/versions/latest/sdk/location/"
 

@@ -40,7 +40,6 @@ export default function StartCompetitionScreen(props: Props) {
   }, []);
 
   const [showDatePicker, setShowDatePicker] = useState(false);
-
   const onChangeDate = (event: any, selectedDate?: Date) => {
     if (selectedDate) {
       setDate(selectedDate);
@@ -78,7 +77,13 @@ export default function StartCompetitionScreen(props: Props) {
       <View style={styles.center}>
         <Pressable
           style={styles.startButton}
-          onPress={() => props.navigation.navigate("Competition")}>
+          onPress={() => props.navigation.navigate("Competition", {
+            competitionName: competitionName || "No name",
+            location: location || "Unknown location",
+            date: date.toDateString()
+          })
+          }
+          >
           <Text style={styles.startButtonText}>Start</Text>
         </Pressable>
       </View>
